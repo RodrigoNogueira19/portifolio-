@@ -1,0 +1,223 @@
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px rgb(110, 110, 240);
+    transform:scale(2) ;
+}
+/*ESTILO DO CABEÇARIO*/
+
+header{
+    padding: 40px 4%;
+}
+
+header > .Interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #c2bfbf;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #ffffff;
+    transform: scale(1.05);
+
+}
+header nav ul{
+        list-style-type: none; 
+       
+
+}
+
+header nav ul li{
+    display: inline-block ;
+    padding: 0 50px;
+
+}
+
+header .btn-contato  button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 70;
+    background-color: rgba(71, 71, 231, 0.644);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+header .btn-contato  button:hover{
+    box-shadow: 0px 0px 8px; color: rgb(27, 27, 240);
+    transform: scale(1.05);
+}
+
+/*ESTILO DO TOPO DO SITE*/
+
+section.topo-do-site{
+    padding: 40PX 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-do-site p{
+    color: #ffffff;
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+.topo-do-site .img-topo-site img{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 10%;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO DO PROJETOS*/
+
+section.projeto{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+section.projeto .flex{
+    justify-content:space-around;
+
+ 
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size:cover;
+    background-position: 53% 0%;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 53% 53%;
+    border: none;
+    font-size: 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    margin: 0 30px;
+    transition: 1s;
+    box-shadow: 0px 0px 30px rgb(2, 2, 245);
+   
+    
+}
+
+.projeto h2{
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 40px 35%;
+}
+
+.projeto h2 span{
+    color: blue;
+    justify-content: center;
+}
+ 
+ /*ESTILO DO SOBRE*/
+
+section.sobre{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10 px #ffffff1d;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #ffffff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: blue;
+    display:block;
+}
+
+.sobre .txt-sobre h3{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h3 span{
+    color: blue;
+    display:contents;
+}
+.sobre .txt-sobre p{
+    margin: 30px 0;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+.sobre .txt-sobre .btn-social button{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(14, 14, 236);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: 2s;
+    
+}
